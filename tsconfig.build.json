@@ -1,0 +1,8 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/API" },
+    { "path": "packages/database" },
+    { "path": "packages/utilities" }
+  ]
+}
