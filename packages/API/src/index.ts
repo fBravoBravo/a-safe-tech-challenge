@@ -1,5 +1,5 @@
 import Fastify, { FastifyRegisterOptions } from "fastify";
-import { routes } from "./api/routes/routes.js";
+import { routes } from "./routes/routes";
 import fastifySwagger from "@fastify/swagger";
 import fastifySwaggerUi from "@fastify/swagger-ui";
 import "dotenv/config";
