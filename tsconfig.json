@@ -3,7 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "strict": false,
-    "outDir": "./build"
+    "outDir": "./app/dist"
   },
   "include": ["./packages/**/*"]
 }
