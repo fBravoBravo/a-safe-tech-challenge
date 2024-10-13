@@ -1,4 +1,4 @@
-import Fastify, { FastifyRegisterOptions } from "fastify";
+import Fastify from "fastify";
 import { routes } from "./routes/routes";
 import fastifySwagger from "@fastify/swagger";
 import fastifySwaggerUi from "@fastify/swagger-ui";
@@ -19,7 +19,7 @@ server.register(fastifySwaggerUi, swaggerUiOptions);
 
 server.register(routes, { prefix: "/api" });
 
-server.listen({ port: 3000 }, function (err) {
+server.listen({ port: Number(process.env.PORT) }, function (err) {
   if (err) {
     server.log.error(err);
     process.exit(1);
