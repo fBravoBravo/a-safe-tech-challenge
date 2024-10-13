@@ -19,9 +19,12 @@ server.register(fastifySwaggerUi, swaggerUiOptions);
 
 server.register(routes, { prefix: "/api" });
 
-server.listen({ port: Number(process.env.PORT) }, function (err) {
-  if (err) {
-    server.log.error(err);
-    process.exit(1);
-  }
-});
+server.listen(
+  { port: Number(process.env.PORT), host: "0.0.0.0" },
+  function (err) {
+    if (err) {
+      server.log.error(err);
+      process.exit(1);
+    }
+  },
+);
