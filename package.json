@@ -2,7 +2,7 @@
   "name": "a-safe-tech-challenge",
   "version": "1.0.0",
   "description": "a safe company tech challenge",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
     "build": "npx rimraf ./dist && tsc",
     "start": "npm run build && node dist/index.js"
